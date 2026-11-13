@@ -159,7 +159,7 @@ p{margin:0 0 1em}
 /* pasek telefonu (po przewinięciu) */
 .mob{display:none}
 @media (max-width:1079px){
-  .nav,.hdr .tel,.hdr .btn{display:none}
+  .nav,.hdr-in .tel,.hdr-in .btn{display:none}
   .burg{display:grid;place-items:center;margin-left:auto;width:46px;height:46px;border:0;background:none;cursor:pointer;padding:0}
   .burg span{display:block;width:26px;height:3px;border-radius:2px;background:var(--ink);box-shadow:0 -8px 0 var(--ink),0 8px 0 var(--ink)}
   .burg[aria-expanded="true"] span{background:transparent;box-shadow:none;position:relative}
@@ -170,9 +170,9 @@ p{margin:0 0 1em}
   .mtel + .burg{margin-left:0}
   .menu{position:absolute;left:0;right:0;top:100%;background:#fff;border-bottom:4px solid var(--red);padding:18px 20px 26px;box-shadow:0 16px 30px rgba(0,0,0,.15)}
   .menu.open{display:block}
-  .menu a:not(.btn){display:block;padding:12px 0;font:700 1.35rem/1.2 "Baloo 2",sans-serif;text-decoration:none;border-bottom:1px solid var(--line)}
+  .menu a:not(.btn):not(.mt){display:block;padding:12px 0;font:700 1.35rem/1.2 "Baloo 2",sans-serif;text-decoration:none;border-bottom:1px solid var(--line)}
   .menu .btn{margin-top:22px;width:100%}
-  .menu .mt{display:block;margin-top:16px;text-align:center;font-weight:800;color:var(--red-d)}
+  .menu .mt{display:block;text-decoration:none;margin-top:16px;text-align:center;font-weight:800;color:var(--red-d)}
   .cards{grid-template-columns:repeat(2,minmax(0,1fr))}
   .split,.art .split,.kont{grid-template-columns:minmax(0,1fr);gap:40px}
   .art .split > div:first-child{order:0}
